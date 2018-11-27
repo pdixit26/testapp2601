@@ -1,7 +1,7 @@
 // in sublime
-var express = require(‘express’);
-var port = process.env.PORT || 3000;
-var app = express();
+let express = require(‘express’);
+let port = process.env.PORT || 3000;
+let app = express();
 app.get(‘/’, function (req, res) {
  res.send(JSON.stringify({ Hello: ‘World’}));
 });
